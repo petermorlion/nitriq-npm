@@ -2,6 +2,14 @@
   "name": "nitriq-npm",
   "version": "0.0.1",
   "description": "NPM package of Nitriq static code analysis tool for .NET.",
+  "homepage": "https://github.com/petermorlion/nitriq-npm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petermorlion/nitriq-npm"
+  },
+  "bugs": {
+    "url": "https://github.com/petermorlion/nitriq-npm/issues"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +22,13 @@
     "code",
     "analysis"
   ],
-  "author": "Peter Morlion",
+  "files":[
+    "lib",
+    "Nitriq"
+  ],
+  "author": {
+    "name": "Peter Morlion",
+    "url": "http://www.petermorlion.com"
+  },
   "license": "MIT"
 }
