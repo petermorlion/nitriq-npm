@@ -1,6 +1,6 @@
 {
   "name": "nitriq-npm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NPM package of Nitriq static code analysis tool for .NET.",
   "homepage": "https://github.com/petermorlion/nitriq-npm",
   "repository": {

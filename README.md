@@ -3,25 +3,32 @@ A simple NPM wrapper around Nitriq, a static code analysis tool for .NET.
 ## Usage
 
 ```
-node index [queriesFile.nq] <assembly1.dll> <assembly2.dll> <assembly3.exe> <...> [resultsFile.html]
+var nitriq = require('nitriq-npm');
+
+nitriq.run({
+    queriesFile: 'customQueries.nq',
+    assemblies: ['assembly.dll', 'executable.exe'],
+    resultsFile: 'results.html'
+});
 ```
 
 ## Options
 
-There is no specific order to be respected. The file extension of the options is used to determine
-what kind of option it is. Options with other or no file extensions are ignored.
-
 ### queriesFile
 
-Specify a queries file (.nq file) or omit if you want to use the default file.
+A Nitriq queries file (.nq file).
+
+The default value is the queries.nq file that can be found in the `lib` folder.
 
 ### assemblies
 
-A list of assemblies (dll or exe), separated by spaces.
+An array of assemblies (dll or exe).
 
 ### resultsFile
 
-Specify the results file or omit if you want to use the default file (results.html).
+The location to store the results file.
+
+The default value is results.html and will be store at the root of your project.
 
 ## Disclaimer
 
