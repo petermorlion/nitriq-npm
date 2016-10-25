@@ -31,3 +31,4 @@ Nitriq is a discontinued application that no longer works on Windows 8 and above
 The Nitriq binaries are included in this repository as-is.
 
 This repository just contains an NPM wrapper around it, so it can be used in NPM build scripts.
+The MIT license of this repository concerns all files *excluding* the Nitriq folder.
