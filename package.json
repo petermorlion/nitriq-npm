@@ -1,6 +1,6 @@
 {
   "name": "nitriq-npm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NPM package of Nitriq static code analysis tool for .NET.",
   "homepage": "https://github.com/petermorlion/nitriq-npm",
   "repository": {
@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/petermorlion/nitriq-npm/issues"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
