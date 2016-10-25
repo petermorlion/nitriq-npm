@@ -4,6 +4,20 @@ var fs = require('fs');
 var nitriqPath = 'Nitriq\\Nitriq.Console-cleaned.exe'
 var temporaryNitriqProject = 'temporary.nitriqProj';
 
+if (process.argv[2] == 'help') {
+    console.log('');
+    console.log('Usage: node index [queriesFile.nq] <assembly1.dll> <assembly2.dll> <assembly3.exe> <...> [resultsFile.html]');
+    console.log('');
+    console.log('  queriesFile.nq: Can be omitted to use the default queries file. Only one queries file can be specified.');
+    console.log('');
+    console.log('  assembly.dll: Specify one or more assemblies (dll or exe) to be analyzed, separated by spaces.');
+    console.log('');
+    console.log('  resultsFile.html: html file to write the results to. Can be omitted to use the default (results.html).');
+    console.log('                    Only one resultsFile may be specified. If the file already exists, it will be overwritten.');
+
+    return;
+}
+
 /* Get queries file */
 var queriesFile = '';
 
